@@ -55,7 +55,7 @@ func main() {
 
 	n := node.Node{
 		Name:   "Node-1",
-		Ip:     "192.168.1.1",
+		IP:     "192.168.1.1",
 		Cores:  4,
 		Memory: 1024,
 		Disk:   25,

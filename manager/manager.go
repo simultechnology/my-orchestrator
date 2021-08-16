@@ -7,6 +7,7 @@ import (
 	"my-orchestrator/task"
 )
 
+// Manager オブジェクト
 type Manager struct {
 	Pending       queue.Queue
 	TaskDb        map[string][]task.Task
@@ -16,6 +17,7 @@ type Manager struct {
 	TaskWorkerMap map[uuid.UUID]string
 }
 
+// SelectWorker will select running workers
 func (m *Manager) SelectWorker() {
 	fmt.Println("I will select an appropriate worker")
 }
